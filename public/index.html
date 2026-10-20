@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Srivatsav Job Portal</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 2rem;}
+    .job {border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem;}
+    .filter {margin-bottom: 1rem;}
+  </style>
+</head>
+<body>
+  <h1>Job Tracker for Srivatsav Gorti</h1>
+  <div class="filter">
+    <input id="title" placeholder="Title" />
+    <input id="company" placeholder="Company" />
+    <input id="location" placeholder="Location" />
+    <button onclick="loadJobs()">Search</button>
+  </div>
+  <div id="jobs"></div>
+
+  <script>
+    async function loadJobs(){
+      const params = new URLSearchParams();
+      const t=document.getElementById('title').value; if(t) params.append('title',t);
+      const c=document.getElementById('company').value; if(c) params.append('company',c);
+      const l=document.getElementById('location').value; if(l) params.append('location',l);
+      const res = await fetch('/jobs?'+params.toString());
+      const jobs = await res.json();
+      const container=document.getElementById('jobs');
+      container.innerHTML='';
+      jobs.forEach(j=>{
+        const div=document.createElement('div');
+        div.className='job';
+        div.innerHTML=`<h3>${j.title} @ ${j.company}</h3>`+
+          `<p><strong>Location:</strong> ${j.location}</p>`+
+          `<p>${j.description?.substring(0,200)}...</p>`;
+        container.appendChild(div);
+      });
+    }
+    // load profile for future use
+    fetch('/profile').then(r=>r.json()).then(p=>{console.log('profile',p)});
+  </script>
+</body>
+</html>

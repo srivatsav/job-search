@@ -1,0 +1,11 @@
+name = "job-search-worker"
+main = "src/index.js"
+compatibility_date = "2024-03-20"
+
+[vars]
+CANDIDATE_NAME = "Srivatsav Gorti"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "job_search"
+database_id = "local-job-search-db"

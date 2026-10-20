@@ -1,0 +1,73 @@
+{
+  "name": "Srivatsav Gorti",
+  "email": "vatsav.gs@gmail.com",
+  "title": "Polyglot Software Engineer",
+  "experience_years": 10,
+  "summary": "Software engineer with 10+ years building scalable backend platforms and distributed systems. Experienced in LLM‑driven agents, data pipelines, low‑code integration platforms, and full‑stack mobile apps.",
+  "education": {
+    "degree": "B.Tech Computer Engineering",
+    "institution": "SRM University, Chennai",
+    "year": 2015,
+    "gpa": 8.504
+  },
+  "skills": [
+    "Python", "PySpark", "Databricks", "Terraform", "LangGraph", "LangChain", "MLflow",
+    "Java", "Akka", "Apache Flink", "Temporal", "Spring Boot", "PostgreSQL", "MongoDB",
+    "Kubernetes", "Helm", "Docker", "Jenkins", "Argo CD", "AWS", "React Native", "Redux", "Node.js"
+  ],
+  "positions": [
+    {
+      "title": "Staff Software Engineer",
+      "company": "Warner Bros. Discovery",
+      "location": "Hyderabad, India",
+      "start": "2025-03",
+      "end": null,
+      "highlights": [
+        "Built Finch, a GenAI finance‑ops assistant (Slack/CLI native) with RAG‑grounded text‑to‑SQL.",
+        "Owned full LLM stack, vector search, prompt guardrails, and MLflow evaluation.",
+        "Led a team of 4, delivering a platform serving 100+ stakeholders.",
+        "Implemented SOX compliance controls saving $1.2 M annually."
+      ]
+    },
+    {
+      "title": "SDE - III",
+      "company": "Phenom",
+      "location": "Hyderabad, India",
+      "start": "2022-02",
+      "end": "2025-03",
+      "highlights": ["Led a 7‑engineer team building a low‑code data‑integration platform.", "Onboarded 250+ customers and 1000+ integrations."]
+    },
+    {
+      "title": "SDE - II",
+      "company": "Phenom",
+      "location": "Hyderabad, India",
+      "start": "2020-01",
+      "end": "2022-04",
+      "highlights": ["Built generic reconciliation framework processing ~1 M events/day.", "Created real‑time NiFi monitoring improving observability ~80%."]
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "ROKA / TechMojo",
+      "location": "Hyderabad, India",
+      "start": "2018-12",
+      "end": "2019-11",
+      "highlights": ["Launched mobile app with 40k+ downloads in first month.", "Integrated Firebase push notifications, reducing crashes 20%."]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "ROKA / TechMojo",
+      "location": "Hyderabad, India",
+      "start": "2018-04",
+      "end": "2018-11",
+      "highlights": ["Designed Travel Desk solution, cutting manual approval time 40%."]
+    },
+    {
+      "title": "Programmer Analyst",
+      "company": "Cognizant",
+      "location": "Hyderabad, India",
+      "start": "2015-08",
+      "end": "2018-03",
+      "highlights": ["Built core backend for Toyota dealer web apps.", "Developed features for Metlife Global Sales Platform."]
+    }
+  ]
+}
